@@ -1,0 +1,91 @@
+:root {
+  /* Tunisian Blue – portes & fenêtres de Sidi Bou Saïd */
+  --blue-deep: #10284a;
+  --blue-primary: #1565c0;
+  --blue-light: #4290e0;
+  --blue-pale: #d6e8f7;
+
+  /* Blanc cassé & crème – murs de médina */
+  --cream: #faf8f2;
+  --cream-warm: #f5f0e3;
+  --white: #ffffff;
+
+  /* Jaune soleil – boutons d'action */
+  --yellow-sun: #ffc233;
+  --yellow-hover: #ffb300;
+  --yellow-dark: #e6a200;
+
+  /* Vert du parc – environnement */
+  --green-park: #4caf50;
+  --green-light: #81c784;
+  --green-dark: #388e3c;
+
+  /* Rose bougainvillier – accent */
+  --pink-bougainvillea: #e91e63;
+  --pink-light: #f48fb1;
+
+  /* Terre cuite – accent secondaire */
+  --terracotta: #bf6340;
+  --terracotta-light: #d4916e;
+
+  /* Texte */
+  --text-dark: #1a1a1a;
+  --text-body: #333333;
+  --text-muted: #6b6b6b;
+  --text-on-blue: #ffffff;
+  --text-on-yellow: #1a1a1a;
+
+  /* Ombres et bordures */
+  --shadow-sm: 0 1px 3px rgba(16, 40, 74, 0.1);
+  --shadow-md: 0 4px 12px rgba(16, 40, 74, 0.12);
+  --shadow-lg: 0 8px 24px rgba(16, 40, 74, 0.15);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Typographie */
+  --font-body: 'Segoe UI', Tahoma, 'Noto Sans Arabic', sans-serif;
+  --font-heading: 'Segoe UI', Tahoma, 'Noto Sans Arabic', sans-serif;
+
+  /* Espacement */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+
+  /* Mise en page */
+  --max-width: 1200px;
+  --gutter: 16px;
+  --nav-height: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --cream: #1a1f2e;
+    --cream-warm: #222838;
+    --white: #151a28;
+    --text-dark: #f0f0f0;
+    --text-body: #d0d0d0;
+    --text-muted: #9a9a9a;
+    --blue-pale: #1e3354;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+:root[data-theme="dark"] {
+  --cream: #1a1f2e;
+  --cream-warm: #222838;
+  --white: #151a28;
+  --text-dark: #f0f0f0;
+  --text-body: #d0d0d0;
+  --text-muted: #9a9a9a;
+  --blue-pale: #1e3354;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+}

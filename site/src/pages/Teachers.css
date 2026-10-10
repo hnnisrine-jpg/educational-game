@@ -1,0 +1,133 @@
+.teachers-hero {
+  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue-primary) 100%);
+  padding: var(--space-xl) 0;
+  color: var(--white);
+}
+
+.teachers-hero h1 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.teachers-hero p {
+  color: var(--blue-pale);
+  font-size: 1.1rem;
+}
+
+.teachers-content {
+  padding: var(--space-xl) var(--gutter) var(--space-2xl);
+}
+
+.filters-bar {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 180px;
+}
+
+.filter-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filter-group select {
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--blue-pale);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text-body);
+  background: var(--cream);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.filter-group select:focus {
+  border-color: var(--blue-primary);
+  outline: none;
+}
+
+.no-results {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-lg);
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.resource-header {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.resource-card h3 {
+  font-size: 1.05rem;
+}
+
+.resource-desc {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.5;
+}
+
+.official-ref {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--blue-pale);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.official-ref strong {
+  display: block;
+  margin-bottom: var(--space-xs);
+  color: var(--blue-primary);
+}
+
+.independent-notice {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: var(--space-xs) 0;
+  border-top: 1px solid var(--cream-warm);
+}
+
+@media (max-width: 768px) {
+  .filters-bar {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    min-width: 100%;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}
